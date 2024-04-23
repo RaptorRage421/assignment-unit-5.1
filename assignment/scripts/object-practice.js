@@ -10,21 +10,21 @@ console.log('***** Object Practice *****')
 */
 const me = {
   // TODO - add properties here
-  firstName: 'Sam',
-  lastName: 'Shacter',
-  hasSiblings: true,
-  shoeCount: 4,
-  favThreeFoods: [Tequila, Water, Pizza],
-  height: '6ft 2',
-  hair: true,
-  haircolor: 'Greying',
-  perception: 7,
-  strength: 7,
-  endurance: 6,
-  agility: 5,
-  charisma: 5,
-  intelligence: 9,
-  anxiety: 6,
+  firstName: 'Sam', //first name
+  lastName: 'Shacter', //last name
+  hasSiblings: true, //hassiblings - boolean
+  shoeCount: 4, //shoe count
+  favThreeFoods: [Tequila, Water, Pizza], // favorite foods. 
+  height: '6ft 2', //bonus height attribute
+  hair: true, // hair attribute
+  haircolor: 'Greying', // hair color attribute
+  perception: 7, // perception - affected by tequila
+  strength: 7, // strength
+  endurance: 6, // endurance
+  agility: 5, // agility - affected by tequila
+  charisma: 5, //  charisma - affected by tequilia
+  intelligence: 9, // intelligence - affected by tequila
+  anxiety: 6, // anxiety
 
 
 };
