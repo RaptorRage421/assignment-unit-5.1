@@ -14,7 +14,7 @@ const me = {
   lastName: 'Shacter', //last name
   hasSiblings: true, //hassiblings - boolean
   shoeCount: 4, //shoe count
-  favThreeFoods: [Tequila, Water, Pizza], // favorite foods. 
+  favThreeFoods: ['Tequila', 'Water', 'Pizza'], // favorite foods. 
   height: '6ft 2', //bonus height attribute
   hair: true, // hair attribute
   haircolor: 'Greying', // hair color attribute
