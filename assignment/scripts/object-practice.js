@@ -15,18 +15,16 @@ const me = {
   hasSiblings: true, //hassiblings - boolean
   shoeCount: 4, //shoe count
   favThreeFoods: ['Tequila', 'Water', 'Pizza'], // favorite foods. 
-  height: '6ft 2', //bonus height attribute
-  hair: true, // hair attribute
-  haircolor: 'Greying', // hair color attribute
-  perception: 7, // perception - affected by tequila
-  strength: 7, // strength
-  endurance: 6, // endurance
-  agility: 5, // agility - affected by tequila
-  charisma: 5, //  charisma - affected by tequilia
-  intelligence: 9, // intelligence - affected by tequila
-  anxiety: 6, // anxiety
+  attributes: {
+    perception: 7, // perception - affected by tequila
+    strength: 7, // strength
+    endurance: 6, // endurance
+    agility: 5, // agility - affected by tequila
+    charisma: 5, //  charisma - affected by tequilia
+    intelligence: 9, // intelligence - affected by tequila
+    anxiety: 6, // anxiety
 
-
+  }
 };
 console.log('A little about me:', me);
 
@@ -36,9 +34,9 @@ console.log('A little about me:', me);
     created above to set its value. 
   - Console.log fullName
 */
-let fullName; 
-      fullName = me.firstName + " " + me.lastName;
-      console.log('Full name is: ', fullName);
+let fullName;
+fullName = me.firstName + " " + me.lastName;
+console.log('Full name is: ', fullName);
 
 
 
@@ -47,8 +45,8 @@ let fullName;
   - Console.log your last favorite food 
 */
 let myFirstFood = me.favThreeFoods[0];
-let myLastFood = me.favThreeFoods[me.favThreeFoods.length-1];
-    
+let myLastFood = me.favThreeFoods[me.favThreeFoods.length - 1];
+
 console.log('My first favorite food is: ', myFirstFood);
 console.log('My last fav food is: ', myLastFood);
 
