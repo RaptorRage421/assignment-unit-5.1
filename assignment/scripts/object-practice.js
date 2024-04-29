@@ -68,3 +68,26 @@ console.log('Just got a new pair of shoes! Bringing my total shoes to: ', me.sho
 */
 me.favoriteColor = 'Purple';
 console.log('Just added information about my favorite color: ', me.favoriteColor);
+
+function drinkTequila() {
+  for (i = 0; i < me.favThreeFoods.length; i++) {
+      if (me.favThreeFoods[i] === 'Tequila') {
+          me.attributes.anxiety = me.attributes.anxiety - 3;
+          me.attributes.perception = me.attributes.perception - 2;
+          me.attributes.charisma = me.attributes.charisma + 2;
+          if (me.attributes.anxiety < 0) {
+            me.attributes.anxiety = me.attributes.anxiety + 12;
+            me.attributes.charisma = me.attributes.charisma - 8;
+            me.attributes.endurance = me.attributes.endurance - 3;
+            me.attributes.agility = me.attributes.agility - 3;
+            me.attributes.intelligence = me.attributes.intelligence - 3;
+            console.log(me.attributes);
+              return 'maybe thats enough...'
+          }
+      }
+      return me.attributes
+  }
+}
+console.log("Maybe 1 drink couldn't hurt..." ,drinkTequila());
+console.log("Ehhhh maybe 1 more..." ,drinkTequila());
+console.log("We can have 1 more...", drinkTequila())
